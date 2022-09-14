@@ -59,7 +59,7 @@
                     <div class="col-sm-3"><h5 class="card-title">Pay: </h5></div>
                     <c:choose>
 					    <c:when test="${job.getPay() != null}">
-                    		<div class="col">${job.getPay()} per ${job.getPayRate()}</div>
+                    		<div class="col">$ ${job.getPay()} per ${job.getPayRate()}</div>
 					    </c:when>    
 					    <c:otherwise>
 					        <div class="col">Not Known Yet</div>
